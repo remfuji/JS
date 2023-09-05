@@ -7,7 +7,7 @@
 // dichiarare la funzione
 // mediante ciclo for associare  le chiavi della mappa all'elemento
 // degli indici dell'array
-// e per il valore della mappa associare la lunghezza dell'elemento
+// e per il valore/chiave della mappa associare la lunghezza dell'elemento
 //dell'indice dell'array
 
 let string = ["ciao", "io", "annibale", "settantanove"]
