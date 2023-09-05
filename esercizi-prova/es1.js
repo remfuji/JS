@@ -2,6 +2,11 @@
 //la funzione deve ritornare un array che contenga gli elementi 
 // che sono solo in a e solo in b
 
+//dichiarare i due array
+//dichairare la funzione
+//dichiarare la var del risultato
+//fare un ciclo for per a e b per capire se l'elemento di a e' presente in b e viceversa, se non c'e' push sul risultato
+
 let a = [1,2,3,4,5]
 let b = [2,7,4,9]
 
