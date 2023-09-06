@@ -34,6 +34,7 @@ function minMax(arr) {
 
       
     }
+    //refactor
     res[0] = 'numero piu piccolo: ' + min
     res[1] = 'numero piu grande: ' + max
     return res

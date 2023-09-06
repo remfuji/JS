@@ -18,7 +18,7 @@ function crazy(str) {
     let current = str[i]
     res[current] = current.length
   }
-
+  
   return res
 }
 console.log(crazy(string))
