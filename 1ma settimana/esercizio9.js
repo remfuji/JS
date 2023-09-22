@@ -28,7 +28,7 @@ let crossedHalfway = false
 while (rows > 0) {
   let xs = "-"
   for (let i = 0; i < xsToDraw; i++) {
-    xs += "x"
+    xs += "x" 
   }
   console.log(xs)
 

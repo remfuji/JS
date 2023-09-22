@@ -30,3 +30,5 @@ function checkNum( a, b) {
 }
 
 console.log(checkNum(a,b))
+
+

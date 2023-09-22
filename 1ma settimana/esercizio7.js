@@ -7,12 +7,12 @@ for (let i = 0; i < 10; i++) {
         o = o + y;
     }
     console.log(o);
-  }else {
-    let o = "";
-    for (let y = 9; y >= 0; y--) {
-        o = o + y
-    }
-    console.log(o);
+  // }else {
+  //   let o = "";
+  //   for (let y = 9; y >= 0; y--) {
+  //       o = o + y
+  //   }
+  //   console.log(o);
   }
     
 }
