@@ -30,22 +30,16 @@
 function crazyString(string) {
   let itIsCrazy = "stringa Pazza!";
   let itIsNot = "stringa NON Pazza!";
-  
 
   if (isNotCrazy(string)) {
     return itIsNot;
-  }
-  else if (thereIsSubject) {
+  } else if (thereIsSubject(string)) {
     return itIsCrazy + "trovato soggetto";
-  }
-  else if (thereIsPunctuation) {
+  } else if (thereIsPunctuation(string)) {
     return itIsCrazy + "punteggiatura trovata";
+  } else if (parole[i] === "Cthulhu") {
+    return itIsCrazy + "trovato Cthulhu";
   }
- 
-      else if(parole[i] === 'Cthulhu') {
-          return isCrazy + 'trovato Cthulhu'
-      }
-  
 
   return itIsCrazy;
 }
@@ -58,29 +52,30 @@ console.log(crazyString("?siamo al"));
 console.log(crazyString("Lui siamo al"));
 
 function isNotCrazy(string) {
-    let parole = string.split(" ");
-    for (let i = 0; i < parole.length; i++) {
-      if (parole[i] === "mare" || parole[i] === "Church") {
-        return true;
-      }
-    }
-    return false;
-  }
-  
-  function thereIsPunctuation(string) {
-    let parole = string.split(" ");
-    if (
-      parole[i][0] == "." || parole[i][0] == "," || parole[i][0] == "!" || parole[i][0] == "?" || parole[i][0] == "-" || parole[i][0] == "~") {
+  let parole = string.split(" ");
+  for (let i = 0; i < parole.length; i++) {
+    if (parole[i] === "mare" || parole[i] === "Church") {
       return true;
     }
-    return false;
   }
-  function thereIsSubject(string) {
-    let parole = string.split(" ");
-    for (let i = 0; i < parole.length; i++) {
-      if (parole[i] === "Lui" || parole[i] === "Lei" || parole[i] === "Egli" || parole[i] === "Ella") {
-        return true
-      }
+  return false;
+}
+
+function thereIsPunctuation(string) {
+
+  return string[0] == "." || string[0] == "," || string[0] == "!" || string[0] == "?" || string[0] == "-" ||  string[0] == "~"
+}
+function thereIsSubject(string) {
+  let parole = string.split(" ");
+  for (let i = 0; i < parole.length; i++) {
+    if (
+      parole[i] === "Lui" ||
+      parole[i] === "Lei" ||
+      parole[i] === "Egli" ||
+      parole[i] === "Ella"
+    ) {
+      return true;
     }
-    return false
   }
+  return false;
+}
