@@ -1,7 +1,7 @@
-let stringaDaControllare = ".Leiere ciao mamma church pari al Cthulhu domaniire";
+
 
 function isNotMad(string) {
-  return string.includes("mare") || string.includes("church");
+  return string.includes("mare") || string.includes("Church");
 }
 function endsWith(string) {
   return string.endsWith("!?!");
@@ -18,7 +18,7 @@ function noSobject(string) {
   );
 }
 function thereIsPunctuation(string) {
-  let punteggiatura = [".", ",", "!", "?"];
+  let punteggiatura = [".", ",", "!", "?", "~"];
   for (let i = 0; i < punteggiatura.length; i++) {
     return string[0] == punteggiatura[i];
   }
@@ -50,4 +50,8 @@ function checkCrazyness(string) {
   return "is Mad but is not in check";
 }
 
-console.log(checkCrazyness(stringaDaControllare));
+console.log(checkCrazyness('.Quando guardi a lungo nell abisso, l abisso ti guarda dentro.'));
+console.log(checkCrazyness('Andare a rimirare'));
+console.log(checkCrazyness('Lui e pazzo.'));
+console.log(checkCrazyness('~ Pensava sempre al mare come a la mar, come lo chiamano in spagnolo quando lo amano ~'));
+console.log(checkCrazyness('Papa, come sta Church?'));
